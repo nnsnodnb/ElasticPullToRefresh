@@ -98,7 +98,7 @@ public class ElasticPullToRefresh: UIView, UIGestureRecognizerDelegate {
 	
 	// MARK: Gesture Recognizers
 	
-	func didPan(_ gestureRecognizer: UIPanGestureRecognizer) {
+	@objc func didPan(_ gestureRecognizer: UIPanGestureRecognizer) {
 		if gestureRecognizer.state == .ended {
 			if isRefreshing {
 				updateContentInsets(UIEdgeInsetsMake(originalInsets.top + pullDistance, 0, 0, 0))

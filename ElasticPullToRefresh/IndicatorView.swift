@@ -51,7 +51,7 @@ public class IndicatorView: UIView {
 	private let rotationAnimation: CAAnimation = {
 		let animation = CABasicAnimation(keyPath: "transform.rotation.z")
 		animation.fromValue = 0
-		animation.toValue = M_PI * 2
+		animation.toValue = Double.pi * 2
 		animation.duration = 4
 		animation.repeatCount = MAXFLOAT
 		return animation
@@ -81,8 +81,8 @@ public class IndicatorView: UIView {
 		let center = CGPoint(x: bounds.midX, y: bounds.midY)
 		let radius = min(bounds.width, bounds.height) / 2 - circleLayer.lineWidth/2
 		
-		let startAngle = CGFloat(-M_PI_2)
-		let endAngle = startAngle + CGFloat(M_PI * 2)
+		let startAngle = CGFloat(-Double.pi * 2)
+		let endAngle = startAngle + CGFloat(Double.pi * 2)
 		let path = UIBezierPath(arcCenter: CGPoint.zero, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
 		
 		circleLayer.position = center

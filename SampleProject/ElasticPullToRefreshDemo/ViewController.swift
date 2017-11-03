@@ -25,8 +25,8 @@ class ViewController: UIViewController {
 		
 		self.navigationItem.title = "Bananas"
 		self.navigationController?.navigationBar.titleTextAttributes = [
-			NSForegroundColorAttributeName : UIColor.white,
-			NSFontAttributeName : UIFont.systemFont(ofSize: 18.0, weight: UIFontWeightBold)
+			NSAttributedStringKey.foregroundColor : UIColor.white,
+			NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
 		];
 		self.navigationController?.navigationBar.isTranslucent = false
 		self.navigationController?.navigationBar.shadowImage = UIImage()
