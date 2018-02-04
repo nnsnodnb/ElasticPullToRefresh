@@ -6,8 +6,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { "Joshua Tessier" => "joshpc@gmail.com" }
   s.platform     = :ios, "11.0"
-  s.swift_version = "4.0"
-
   s.source       = { :git => "https://github.com/joshpc/ElasticPullToRefresh.git", :tag => '1.4.5' }
   s.source_files = "ElasticPullToRefresh"
 end
